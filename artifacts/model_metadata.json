@@ -1,0 +1,110 @@
+{
+  "best_model_architecture": "Balanced_LogisticRegression",
+  "optimal_threshold": 0.13,
+  "cost_assumptions": {
+    "cost_false_negative_usd": 120.0,
+    "cost_false_positive_usd": 15.0
+  },
+  "leaderboard": [
+    {
+      "model_name": "Heuristic_Rule_Baseline",
+      "val_roc_auc": 0.6054,
+      "val_pr_auc": 0.3082,
+      "val_brier_score": 0.1977,
+      "val_f1_default": 0.4018,
+      "val_precision_default": 0.4065,
+      "val_recall_default": 0.3973,
+      "val_cost_default": 17745.0
+    },
+    {
+      "model_name": "Baseline_LogisticRegression",
+      "val_roc_auc": 0.6978,
+      "val_pr_auc": 0.4573,
+      "val_brier_score": 0.1644,
+      "val_f1_default": 0.3172,
+      "val_precision_default": 0.6479,
+      "val_recall_default": 0.21,
+      "val_cost_default": 21135.0
+    },
+    {
+      "model_name": "Balanced_LogisticRegression",
+      "val_roc_auc": 0.6977,
+      "val_pr_auc": 0.4591,
+      "val_brier_score": 0.22,
+      "val_f1_default": 0.4662,
+      "val_precision_default": 0.37,
+      "val_recall_default": 0.6301,
+      "val_cost_default": 13245.0
+    },
+    {
+      "model_name": "RandomForest_Classifier",
+      "val_roc_auc": 0.6796,
+      "val_pr_auc": 0.4477,
+      "val_brier_score": 0.2014,
+      "val_f1_default": 0.4411,
+      "val_precision_default": 0.4153,
+      "val_recall_default": 0.4703,
+      "val_cost_default": 16095.0
+    },
+    {
+      "model_name": "GradientBoosting_Classifier",
+      "val_roc_auc": 0.6589,
+      "val_pr_auc": 0.4056,
+      "val_brier_score": 0.2136,
+      "val_f1_default": 0.4168,
+      "val_precision_default": 0.3586,
+      "val_recall_default": 0.4977,
+      "val_cost_default": 16125.0
+    }
+  ],
+  "test_metrics": {
+    "selected_model": "Balanced_LogisticRegression",
+    "is_calibrated": true,
+    "optimal_threshold": 0.13,
+    "test_roc_auc": 0.7224,
+    "test_pr_auc": 0.5089,
+    "test_brier_score": 0.1695,
+    "eval_at_optimal_threshold": {
+      "threshold": 0.13,
+      "total_cost": 9705.0,
+      "cost_fn_component": 1200.0,
+      "cost_fp_component": 8505.0,
+      "tp": 228,
+      "fp": 567,
+      "tn": 95,
+      "fn": 10,
+      "precision": 0.2868,
+      "recall": 0.958,
+      "f1": 0.4414
+    },
+    "eval_at_default_threshold": {
+      "threshold": 0.5,
+      "total_cost": 21975.0,
+      "cost_fn_component": 21480.0,
+      "cost_fp_component": 495.0,
+      "tp": 59,
+      "fp": 33,
+      "tn": 629,
+      "fn": 179,
+      "precision": 0.6413,
+      "recall": 0.2479,
+      "f1": 0.3576
+    },
+    "eval_heuristic_baseline": {
+      "threshold": 0.5,
+      "total_cost": 18525.0,
+      "cost_fn_component": 16200.0,
+      "cost_fp_component": 2325.0,
+      "tp": 103,
+      "fp": 155,
+      "tn": 507,
+      "fn": 135,
+      "precision": 0.3992,
+      "recall": 0.4328,
+      "f1": 0.4153
+    },
+    "naive_no_intervention_cost": 28560.0,
+    "savings_vs_no_intervention_usd": 18855.0,
+    "savings_vs_default_threshold_usd": 12270.0
+  }
+}

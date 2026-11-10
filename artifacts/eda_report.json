@@ -1,0 +1,219 @@
+{
+  "total_records": 6000,
+  "total_patients": 1194,
+  "date_range_booking": [
+    "2026-01-01",
+    "2026-08-28"
+  ],
+  "date_range_appointment": [
+    "2026-01-02",
+    "2026-10-26"
+  ],
+  "missing_values": {},
+  "duplicate_appointments": 0,
+  "temporal_inconsistencies": 0,
+  "negative_distances": 0,
+  "class_distribution": {
+    "attended_0": 4567,
+    "no_show_1": 1433,
+    "no_show_rate": 0.2388
+  },
+  "numerical_summary": {
+    "lead_time_days": {
+      "mean": 11.04,
+      "std": 10.657,
+      "median": 8.0,
+      "min": 1.0,
+      "max": 61.0
+    },
+    "distance_to_clinic_km": {
+      "mean": 7.806,
+      "std": 5.566,
+      "median": 6.4,
+      "min": 1.3,
+      "max": 47.6
+    },
+    "prior_appointments_count": {
+      "mean": 4.048,
+      "std": 4.45,
+      "median": 3.0,
+      "min": 0.0,
+      "max": 29.0
+    },
+    "prior_no_show_rate": {
+      "mean": 0.175,
+      "std": 0.28,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "sms_reminder_opt_in": {
+      "mean": 0.778,
+      "std": 0.415,
+      "median": 1.0,
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "no_show_by_category": {
+    "department": [
+      {
+        "category": "Cardiology Admin",
+        "count": 738,
+        "no_show_rate": 0.2114
+      },
+      {
+        "category": "Dermatology",
+        "count": 848,
+        "no_show_rate": 0.2535
+      },
+      {
+        "category": "ENT",
+        "count": 464,
+        "no_show_rate": 0.2435
+      },
+      {
+        "category": "General Medicine",
+        "count": 1801,
+        "no_show_rate": 0.2471
+      },
+      {
+        "category": "Ophthalmology",
+        "count": 606,
+        "no_show_rate": 0.2129
+      },
+      {
+        "category": "Orthopedics",
+        "count": 934,
+        "no_show_rate": 0.2313
+      },
+      {
+        "category": "Physical Therapy",
+        "count": 609,
+        "no_show_rate": 0.2611
+      }
+    ],
+    "booking_channel": [
+      {
+        "category": "In-Person Desk",
+        "count": 598,
+        "no_show_rate": 0.2207
+      },
+      {
+        "category": "Online Portal",
+        "count": 2681,
+        "no_show_rate": 0.2626
+      },
+      {
+        "category": "Phone Call",
+        "count": 2132,
+        "no_show_rate": 0.2219
+      },
+      {
+        "category": "Provider Referral",
+        "count": 589,
+        "no_show_rate": 0.2105
+      }
+    ],
+    "insurance_type": [
+      {
+        "category": "Medicare",
+        "count": 979,
+        "no_show_rate": 0.2656
+      },
+      {
+        "category": "Private",
+        "count": 3000,
+        "no_show_rate": 0.1887
+      },
+      {
+        "category": "Public / Medicaid",
+        "count": 1362,
+        "no_show_rate": 0.2863
+      },
+      {
+        "category": "Self-Pay",
+        "count": 659,
+        "no_show_rate": 0.3293
+      }
+    ],
+    "time_of_day_slot": [
+      {
+        "category": "Afternoon (12:00-16:30)",
+        "count": 2460,
+        "no_show_rate": 0.237
+      },
+      {
+        "category": "Evening (17:00-19:30)",
+        "count": 904,
+        "no_show_rate": 0.2965
+      },
+      {
+        "category": "Morning (08:00-11:30)",
+        "count": 2636,
+        "no_show_rate": 0.2208
+      }
+    ],
+    "day_of_week": [
+      {
+        "category": "Friday",
+        "count": 852,
+        "no_show_rate": 0.2418
+      },
+      {
+        "category": "Monday",
+        "count": 1666,
+        "no_show_rate": 0.2413
+      },
+      {
+        "category": "Saturday",
+        "count": 847,
+        "no_show_rate": 0.2479
+      },
+      {
+        "category": "Thursday",
+        "count": 892,
+        "no_show_rate": 0.2691
+      },
+      {
+        "category": "Tuesday",
+        "count": 867,
+        "no_show_rate": 0.2065
+      },
+      {
+        "category": "Wednesday",
+        "count": 876,
+        "no_show_rate": 0.2237
+      }
+    ],
+    "age_group": [
+      {
+        "category": "18-30",
+        "count": 1489,
+        "no_show_rate": 0.3217
+      },
+      {
+        "category": "31-50",
+        "count": 2059,
+        "no_show_rate": 0.2496
+      },
+      {
+        "category": "51-65",
+        "count": 1446,
+        "no_show_rate": 0.186
+      },
+      {
+        "category": "65+",
+        "count": 1006,
+        "no_show_rate": 0.17
+      }
+    ]
+  },
+  "leakage_analysis": {
+    "leakage_detected": false,
+    "checked_temporal_ordering": true,
+    "checked_clinical_absence": true,
+    "leakage_reasons": [],
+    "verdict": "PASSED - Dataset conforms strictly to point-of-booking operational scope with no temporal or clinical leakage."
+  }
+}
