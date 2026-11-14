@@ -1,5 +1,10 @@
 """Unit tests for synthetic data generation and data quality checks."""
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 import pandas as pd
 import pytest
 from src.config import TARGET_COLUMN, DATE_COLS

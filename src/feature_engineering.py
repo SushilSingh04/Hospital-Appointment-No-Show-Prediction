@@ -11,9 +11,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from src.config import (
     RAW_DATA_DIR,
     PROCESSED_DATA_DIR,
-    DATE_COLS,
     TARGET_COLUMN,
-    IDENTIFIER_COLS,
 )
 
 # Core engineered features
